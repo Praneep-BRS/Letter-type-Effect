@@ -20,4 +20,4 @@ The provided webpage for the Letter Type Effect uses a basic tech stack consisti
 - Implements the letter type effect animation and handles user interactions.
 - Enhances the interactivity of the webpage.
 
-### Hosted link [here] ()
+### Hosted link (here) [https://praneep-brs.github.io/Letter-type-Effect/]
