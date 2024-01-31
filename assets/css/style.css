@@ -1,0 +1,137 @@
+:root {
+  --primary_color: #1a4b84;
+  --dark_blue: #1a4b84;
+  --tamarillo: #991e14;
+  --yellow_sea: #fead06;
+  --background_opacity: 0.5;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #f4f4f4;
+  font-family: Arial, Helvetica, sans-serif;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  max-height: 100dvh;
+  overflow: auto;
+}
+
+/** Header **/
+
+.header {
+  background: var(--primary_color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 65px;
+}
+
+.header h2 {
+  color: #fff;
+  font-size: 28px;
+}
+
+.header a {
+  text-decoration: none;
+  padding: 10px 25px;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transition: all 0.3s;
+  border: 1px solid #ffffff2f;
+  border-radius: 8px;
+}
+
+.header a:hover {
+  background: rgba(0, 0, 0, 0.3);
+  color: #e2e2e2;
+  transform: translateY(-2px);
+}
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.heading p {
+  color: rgb(218, 217, 217);
+}
+
+/** Main **/
+
+main {
+  width: 100%;
+  background: url("/assets/images/bg.svg") no-repeat 100%;
+  background-size: cover;
+  padding: 40px 0 25px;
+  height: calc(100vh - 169px);
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+  padding: 10px 25px;
+}
+.content-heading {
+  font-size: 26px;
+  font-weight: 700;
+}
+.text-content {
+  font-size: 18px;
+  line-height: 1.6;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-container button {
+  width: 85px;
+  background: var(--primary_color);
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 1px solid #ffffff5d;
+  cursor: pointer;
+}
+/**Footer**/
+
+footer {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+  background: var(--primary_color);
+}
+.color-palette {
+  list-style: none;
+  display: flex;
+  gap: 10px;
+}
+.color-palette li {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #e2e2e2;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.color-palette li:first-child {
+  background: var(--dark_blue);
+}
+.color-palette li:nth-child(2) {
+  background: var(--tamarillo);
+}
+.color-palette li:last-child {
+  background: var(--yellow_sea);
+}
