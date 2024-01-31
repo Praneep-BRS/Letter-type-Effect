@@ -10,7 +10,7 @@ function textEffect() {
   const resetButton = document.getElementById("reset");
   let headingString = "";
   let paragraphString = "";
-  const typeSpeed = 45;
+  const typeSpeed = 35;
   const timeouts = [];
   for (let i = 0; i < headingArray.length; i++) {
     const timeout = setTimeout(() => {
